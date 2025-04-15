@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/html5reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Student Success Portal</title>
+</head>
+<body>
+    <a href="#main" class="skip">Skip to main content</a>
+    <header>
+        <h1>Welcome to my travel diary!</h1>
+        <p>This is just a dump of my travels and experiences! Enjoy 😸</p>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#favorites">Favorites</a></li>
+                <li><a href="#bucket-list">Bucket List</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </nav>
+    </header>
+
+    <section class="intro-section">
+        <div class="intro-photo">
+        <img src="images/solo.jpg" alt="solo shot" />
+        </div>
+        <div class="intro-text">
+        <br>
+        <br>
+        <br>
+        <h2>Hey I'm Meghna!</h2>
+        <br>
+        <p>I'm a sophomore studying Computer Science with minors in UX Design and Mathematics at the University of Michigan!</p>
+        <br>
+        <p>When I'm not in Ann Arbor, I love to travel and explore new places, cuisines, and cultures!</p>
+        <a href="travel.html" class="more-link">Check out some of my stories ☺</a>
+        <!-- <p>I love to travel and explore new places, cuisines, and cultures!</p> -->
+        </div>
+    </section>
+
+    <h2 class="favorite-text" id="favorites">Some favs :)</h2>
+
+    <main class="blog-container" id="main">
+        <div class="blog-card">
+        <img src="images/Cancun_Cover.png" alt="Cancun_Cover" />
+        <div class="blog-card-content">
+            <h2>Cancun, MX</h2>
+            <p>April 2023 & March 2025</p>
+        </div>
+        </div>
+
+        <div class="blog-card">
+        <img src="images/Hawaii_Cover.jpg" alt="Hawaii_Cover" />
+        <div class="blog-card-content">
+            <h2>Hawaii, USA</h2>
+            <p>December 2016</p>
+        </div>
+        </div>
+
+        <div class="blog-card">
+        <img src="images/alaska_cover.JPG" alt="alaska_cover" />
+        <div class="blog-card-content">
+            <h2>Alaska, USA</h2>
+            <p>August 2018</p>
+        </div>
+        </div>
+    </main>
+
+    <a href="travel.html" class="more-link">See all →</a>
+
+    <h2 class="favorite-text" id="bucket-list">Bucket List Spots!!</h2>
+
+    <section class="blog-container" id="bucket-list">
+
+        <div class="bucket-card">
+        <img src="images/switzerland.png" alt="switzerland" />
+        <h2>Switzerland</h2>
+        </div>
+
+        <div class="bucket-card">
+        <img src="images/paris.jpg" alt="paris" />
+        <!-- Image from https://worldcitiescultureforum.com/city/paris/ -->
+        <h2>Paris</h2>
+        </div>
+
+        <div class="bucket-card">
+        <img src="images/london.jpeg" alt="London" />
+        <!-- Image from https://londonpass.com/en/things-to-do/facts-about-the-tower-of-london -->
+        <h2>London</h2>
+        </div>
+
+        <div class="bucket-card">
+            <img src="images/barcalona.jpg" alt="barcelona" />
+            <!-- Image from https://www.placestotravel.com/barcelona-tips/ -->
+            <h2>Barcelona</h2>
+        </div>
+
+        <div class="bucket-card">
+            <img src="images/portugal.jpeg" alt="portugal" />
+            <!-- Image from https://unsplash.com/s/photos/portugal -->
+            <h2>Portugal</h2>
+        </div>
+
+        <div class="bucket-card">
+            <img src="images/rome.jpeg" alt="rome" />
+            <!-- Image from https://www.italia.it/en/lazio/rome -->
+            <h2>Rome</h2>
+        </div>
+
+        <div class="bucket-card">
+            <img src="images/dubai.png" alt="dubai" />
+            <!-- Image from https://www.britannica.com/place/Dubai-United-Arab-Emirates -->
+            <h2>Dubai</h2>
+        </div>
+
+        <div class="bucket-card">
+            <img src="images/athens.jpg" alt="athens" />
+            <!-- Image from https://en.wikipedia.org/wiki/Athens -->
+            <h2>Athens</h2>
+        </div>
+
+        <div class="bucket-card">
+            <img src="images/venice.png" alt="venice" />
+            <h2>Venice</h2>
+            <!-- Image from https://www.britannica.com/place/Venice -->
+            </div>
+    </section>
+
+    <section class="form-section" id="contact">
+        <!-- STYLING + FORMAT OF THIS SECTION WAS MADE WITH THE HELP OF CHATGPT -->
+        <h2 class="contact">Your turn! Share your travel stories:</h2>
+        <form action="https://formspree.io/f/mqapjdan" method="POST">
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div>
+            <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Email 💌</label>
+            <input type="email" id="email" name="email" placeholder="yourname@example.com" required style="width: 100%;" />
+            </div>
+            <div>
+            <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Memory 💫</label>
+            <textarea id="message" name="message" placeholder="Tell me about your fav travel story..." rows="5" required style="width: 100%;"></textarea>
+            </div>
+            <div style="text-align: center;">
+            <button type="submit" style="padding: 0.75rem 1.5rem; font-size: 1rem; background-color: #317ba3;; color: white; border: none; border-radius: 5px;">Send</button>
+            </div>
+        </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Meghna's Travel Diary!</p>
+      </footer>    
+
+      <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+      </script>
+</body>
+</html>
