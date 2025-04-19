@@ -248,3 +248,63 @@ footer {
 .second-nav:hover {
     text-decoration: underline;
 }
+
+.blog-detail {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px darkgray;
+}
+
+.blog-detail-image {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.blog-detail-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px darkgray;
+}
+
+.blog-detail-content h2 {
+    font-size: 1.8rem;
+    color: #317ba3;
+    margin-top: 1.5rem;
+}
+
+.blog-detail-content p, 
+.blog-detail-content ul {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+
+.custom-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px darkgray;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .carousel-track img {
+    width: 100%;
+    flex-shrink: 0;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  

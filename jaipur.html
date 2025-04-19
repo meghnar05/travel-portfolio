@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaipur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/html5reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <a href="#main" class="skip">Skip to main content</a>
+
+    <header>
+        <nav class="second-nav">
+        <ul>
+            <li><a href="travel.html">← Back to all travels</a></li>
+        </ul>
+        </nav>
+        <h1>Jaipur, IN</h1>
+        <p>August 2024</p>
+    </header>
+  
+    <main id="main" class="blog-detail">
+        <section class="custom-carousel">
+            <div class="carousel-track">
+            <img src="images/jaipur.png" alt="dc" />
+            <img src="images/jaipur2.png" alt="dc" />
+            <img src="images/jaipur3.png" alt="dc" />
+            </div>
+        </section>
+  
+        <section class="blog-detail-content">
+            <h2>Highlights from the Trip:</h2>
+            <ul>
+            <li>👯‍♀️ Visiting my family and going on a trip with them!!</li>
+            <li>🚐 Drove through the hills</li>
+            <li>🏰 Visiting the castles where the early royalty lived</li>
+            <li>👗 Amazinggg boutiques</li>
+            </ul>
+    
+            <h2>Favorite Memory</h2>
+            <p>
+            I enjoyed visiting the temples, castles, and gardens of historical kings and queens. I visited the birth and death places of many warriors!
+            </p>
+    
+            <h2>Book Rec</h2>
+            <p>
+            When Dimple Met Rishi by Sandhya Menon
+            </p>
+        </section>
+    
+        <a href="travel.html" class="more-link">← Back to travel stories</a>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="year"></span> Meghna's Travel Diary!</p>
+        </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    
+    <script>
+        let slide = document.querySelector(".carousel-track");
+        let images = document.querySelectorAll(".carousel-track img");
+        let current = 0;
+    
+        function carousel() {
+        const slideWidth = images[0].clientWidth;
+        current = (current + 1) % images.length;
+        slide.style.transform = `translateX(-${current * slideWidth}px)`;
+        }
+        // Credit to GPT and StackOverflow (https://stackoverflow.com/questions/60138390/how-do-i-fix-this-code-for-my-image-slide) for helping with writing the carousel function
+
+        setInterval(carousel, 2000);
+    </script>
+</body>
+</html>
