@@ -20,6 +20,16 @@
         <h1>My travel journey!</h1>
         <p>My fav memories from my fav places ❤️‍🔥</p>
       </header>
+
+      <div id="sort-form">
+        <label for="sort-year">Sort:</label>
+        <select id="sort-year">
+          <option value="" disabled selected></option>
+          <option value="desc">Most Recent</option>
+          <option value="asc">Older</option>
+        </select>
+      </div>
+      
     
       <main class="blog-container">
         <a href="hawaii.html" style="text-decoration: none; color: inherit;">
@@ -180,6 +190,44 @@
       <script>
         document.getElementById("year").textContent = new Date().getFullYear();
       </script>
-      
+
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const sortForm = document.getElementById("sort-year");
+          const blogContainer = document.querySelector(".blog-container");
+
+          const cardsArray = Array.from(blogContainer.querySelectorAll(".blog-card"));
+
+          sortForm.addEventListener("change", (event) => {
+            const sortedCards = cardsArray.sort((a, b) => {
+              const yearA = extractYear(a);
+              const yearB = extractYear(b);
+
+              if (event.target.value === "asc") {
+                return yearA - yearB;
+              }
+              else {
+                return yearB - yearA;
+              }
+            });
+
+            blogContainer.innerHTML = "";
+            sortedCards.forEach(card => blogContainer.appendChild(card));
+          });
+
+          function extractYear(card) {
+            const text = card.querySelector("p").textContent;
+            const parts = text.trim().split(" ");
+            return parseInt(parts[1]);
+            // console.log(parseInt(parts[1]))
+          }
+        });
+      </script>
+
+      <!-- The above script was written with the help of 
+       https://radbahi.medium.com/implementing-a-basic-filter-function-in-javascript-d0d7607a5331 ,
+       https://daext.com/blog/how-to-create-an-html-table-with-sorting-and-filtering/,
+       https://flaviocopes.com/how-to-sort-array-by-date-javascript/
+       and UMGPT/ChatGPT for javascript syntax -->
 </body>
 </html>
