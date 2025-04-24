@@ -328,10 +328,93 @@ footer {
     border-radius: 10px;
     background-color: white;
     transition: all 0.3s ease;
-    cursor: pointer;
 }
   
 #sort-year:hover {
     border-color: #001e2e;
 }
-  
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: beige;
+    }
+
+    header {
+        background: #013957;
+        color: beige;
+    }
+
+    .intro-section {
+        background-color: #1a1a1a;
+        box-shadow: 0 4px 8px beige;
+    }
+
+    .form-section {
+        background-color: #1a1a1a;
+        box-shadow: 0 4px 8px beige;
+    }
+
+    .blog-detail {
+        background-color: #1a1a1a;
+        box-shadow: 0 4px 8px beige;
+    }
+
+    .blog-card {
+        background-color: #1a1a1a;
+        box-shadow: 0 4px 8px beige;
+    }
+
+    .bucket-card {
+        background-color: #1a1a1a;
+        box-shadow: 0 4px 8px beige;
+    }
+
+    .blog-card-content p {
+        color: #90caf9;
+    }
+
+    .more-link {
+        color: #90caf9;
+    } 
+
+    .intro-section h2 {
+        color: #90caf9;
+    }
+
+    .form-section input, .form-section textarea, .form-section button {
+        background-color: beige;
+        color: #90caf9;
+        border: 1px solid beige;
+    }
+
+    .main-nav {
+        background-color: #013957;
+    }
+
+    footer {
+        background-color: #013957;
+    }
+
+    .main-nav a {
+        color: beige;
+    }
+
+    .second-nav a {
+        color: beige;
+    }
+
+    .blog-detail-content h2 {
+        color: #90caf9;
+    }
+
+    #sort-year {
+        padding: 0.4rem 0.8rem;
+        font-size: 1rem;
+        font-family: "Quicksand", sans-serif;
+        border: 2px solid #317ba3;
+        border-radius: 10px;
+        background-color: beige;
+        transition: all 0.3s ease;
+    }
+}
