@@ -196,7 +196,7 @@
           const sortForm = document.getElementById("sort-year");
           const blogContainer = document.querySelector(".blog-container");
 
-          const cardsArray = Array.from(blogContainer.querySelectorAll(".blog-card"));
+          const cardsArray = Array.from(blogContainer.querySelectorAll("a"));
 
           sortForm.addEventListener("change", (event) => {
             const sortedCards = cardsArray.sort((a, b) => {
