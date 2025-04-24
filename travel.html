@@ -200,8 +200,9 @@
 
           sortForm.addEventListener("change", (event) => {
             const sortedCards = cardsArray.sort((a, b) => {
-              const yearA = extractYear(a);
-              const yearB = extractYear(b);
+              const yearA = extractYear(a.querySelector(".blog-card"));
+              const yearB = extractYear(b.querySelector(".blog-card"));
+
 
               if (event.target.value === "asc") {
                 return yearA - yearB;
