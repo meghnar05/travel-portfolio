@@ -418,3 +418,8 @@ footer {
         transition: all 0.3s ease;
     }
 }
+
+input::placeholder, textarea::placeholder {
+    color: black;
+    opacity: 1;
+}
